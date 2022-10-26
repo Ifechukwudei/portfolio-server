@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "description": "server tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Ifechukwudei/portfolio-server.git"
+  },
+  "author": "ifechukwudei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ifechukwudei/portfolio-server/issues"
+  },
+  "homepage": "https://github.com/Ifechukwudei/portfolio-server#readme"
+}

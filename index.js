@@ -3,7 +3,14 @@ const fs = require('fs')
 const http = require('http')
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url)
+  let filePath = path.join(
+    __dirname,
+    req.url === '/'
+      ? 'index.html'
+      : req.url === '/home'
+      ? 'index.html'
+      : req.url
+  )
   let contentType = getContentType(filePath) || 'text/html'
   let emptyPagePath = path.join(__dirname, '', '404.html')
   fs.readFile(filePath, 'utf8', (err, content) => {
